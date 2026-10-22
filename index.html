@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1020">
+<title>日本史 中間テスト特訓</title>
+<style>
+:root{color-scheme:dark;--bg:#090d18;--panel:#111a2b;--panel2:#172238;--line:#293751;--text:#edf3ff;--muted:#9aabc5;--accent:#8b9cff;--good:#62d6a5;--bad:#ff8797;--shadow:0 14px 40px #0003}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 15% 0%,#1c2b50 0,transparent 38%),var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;min-height:100vh}button{font:inherit;cursor:pointer;transition:background .15s,border-color .15s,transform .15s}button:active{transform:scale(.985)}button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}.wrap{width:min(100% - 28px,980px);margin:auto;padding:28px 0 60px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:24px}.brand{font-size:12px;letter-spacing:.14em;color:var(--accent);font-weight:800}.theme{background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:12px;padding:9px 13px}.hero{padding:28px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(130deg,#182746dd,#111a2bf2);box-shadow:var(--shadow);margin-bottom:18px}.eyebrow{font-size:12px;color:var(--accent);font-weight:800;letter-spacing:.12em}.hero h1{font-size:clamp(28px,5vw,43px);line-height:1.2;margin:8px 0 10px;letter-spacing:-.04em}.hero p{color:var(--muted);margin:0;max-width:620px}.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.stat{border:1px solid var(--line);background:#0a1221a8;border-radius:13px;padding:9px 13px;color:var(--muted);font-size:13px}.stat strong{color:var(--text);font-size:16px;margin-right:5px}.layout{display:grid;grid-template-columns:230px minmax(0,1fr);gap:18px;align-items:start}.sidebar,.quiz{border:1px solid var(--line);border-radius:20px;background:var(--panel);box-shadow:var(--shadow)}.sidebar{padding:14px;position:sticky;top:12px}.side-title{font-size:12px;color:var(--muted);font-weight:800;padding:4px 8px 10px}.set{width:100%;display:flex;align-items:center;gap:10px;text-align:left;border:1px solid transparent;background:transparent;color:var(--muted);border-radius:12px;padding:10px;margin:2px 0}.set:hover{background:var(--panel2);color:var(--text)}.set.active{background:#29375b;border-color:#5066a5;color:#fff}.num{display:grid;place-items:center;width:28px;height:28px;border-radius:9px;background:#202d46;font-size:12px;font-weight:800;flex-shrink:0}.set.active .num{background:var(--accent);color:#101629}.quiz{padding:clamp(16px,3vw,28px);min-width:0}.quiz-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.pill{font-size:12px;color:var(--accent);background:#252f4d;padding:5px 10px;border-radius:99px;font-weight:800}.progress{height:5px;background:#263148;border-radius:9px;overflow:hidden;margin:16px 0 24px}.bar{height:100%;width:0;background:linear-gradient(90deg,#7188ff,#9aaaff);transition:width .2s ease}.q{padding:18px 0;border-bottom:1px solid var(--line)}.q:last-of-type{border-bottom:0}.qtop{display:flex;gap:10px;align-items:flex-start}.qnum{font-size:12px;color:var(--accent);font-weight:900;padding-top:3px}.q h3{font-size:17px;line-height:1.55;margin:0 0 14px}.options{display:grid;gap:8px}.option{display:flex;gap:10px;align-items:flex-start;text-align:left;width:100%;padding:12px 13px;border-radius:12px;background:var(--panel2);border:1px solid var(--line);color:var(--text)}.option:hover{border-color:#6379b9;background:#202d49}.option.chosen{border-color:var(--accent);background:#29375b}.option.correct{border-color:var(--good);background:#12372f}.option.wrong{border-color:var(--bad);background:#3a202b}.letter{display:grid;place-items:center;min-width:25px;height:25px;border-radius:7px;background:#2b3955;font-size:12px;font-weight:800}.free{width:100%;background:#0b1322;border:1px solid var(--line);border-radius:11px;padding:12px;color:var(--text);font:inherit}.free:focus{outline:1px solid var(--accent);border-color:var(--accent)}.feedback{font-size:13px;color:var(--muted);margin:10px 0 0;display:none}.feedback.show{display:block}.feedback.good{color:var(--good)}.feedback.bad{color:var(--bad)}.actions{display:flex;gap:9px;flex-wrap:wrap;padding-top:20px}.primary,.secondary{border-radius:11px;padding:10px 15px;font-weight:750}.primary{background:var(--accent);color:#0c1222;border:1px solid var(--accent)}.primary:hover{background:#a9b5ff}.secondary{background:var(--panel2);border:1px solid var(--line);color:var(--text)}.secondary:hover{border-color:#6578aa}.result{display:none;padding:16px;margin-top:16px;border:1px solid var(--line);border-radius:14px;background:var(--panel2)}.result.show{display:block}.result strong{font-size:23px}.hint{font-size:13px;color:var(--muted);margin-top:12px}.footer{color:var(--muted);font-size:12px;text-align:center;margin-top:20px}@media(max-width:700px){.layout{grid-template-columns:1fr}.sidebar{position:static}.sets{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.set{font-size:13px;padding:8px}.hero{padding:22px}.wrap{width:min(100% - 20px,980px);padding-top:14px}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><div><div class="brand">STUDY MODE / HISTORY</div><div style="font-weight:750">MIDTERM PRACTICE</div></div><button class="theme" id="theme" aria-label="Toggle light and dark mode">☼ Light mode</button></header>
+<section class="hero"><div class="eyebrow">日本史 • QUICK REVIEW</div><h1>日本史 中間テスト特訓</h1><p>問題を解く → 答え合わせ → 間違えた問題だけ復習。アニメーションは控えめ、動作は軽量。</p><div class="stats"><div class="stat"><strong id="totalCount">7</strong>テーマ</div><div class="stat"><strong id="doneCount">0</strong>回答済み</div><div class="stat"><strong id="scoreCount">—</strong>正答率</div></div></section>
+<div class="layout"><aside class="sidebar"><div class="side-title">学習テーマを選択</div><div class="sets" id="sets"></div></aside><main class="quiz"><div class="quiz-head"><span class="pill" id="topicPill">SET 01</span><span id="progressText" style="font-size:13px;color:var(--muted)">0 / 5 問回答</span></div><h2 id="topicTitle" style="margin:12px 0 0;font-size:23px">読み込み中</h2><div class="progress"><div class="bar" id="bar"></div></div><div id="questions"></div><div class="actions"><button class="primary" id="grade">答え合わせ</button><button class="secondary" id="retry">間違えた問題を復習</button><button class="secondary" id="show">答え・解説を表示</button><button class="secondary" id="reset">このセットをリセット</button><button class="secondary" id="next">次のセット →</button></div><div class="result" id="result" aria-live="polite"></div><div class="hint">記述問題はキーワードを含めて自己採点してね。選択問題は自動採点。</div></main></div><div class="footer">ローカルで動作 • 外部ライブラリなし • Reduced Motion対応</div>
+</div>
+<script>
+const data=[
+{title:"平安時代の始まり・弘仁貞観文化",qs:[
+["平安京に都が移されたのは何年？",["710年","794年","894年","1185年"],1,"桓武天皇が794年に平安京へ都を移した。"],
+["平安京に都を移した天皇は？",["聖武天皇","桓武天皇","嵯峨天皇","白河上皇"],1,"桓武天皇が長岡京を経て平安京へ遷都した。"],
+["弘仁・貞観文化が栄えたころ、強い影響を与えた宗教は？",["禅宗と日蓮宗","天台宗と真言宗","浄土真宗と曹洞宗","キリスト教"],1,"最澄が天台宗、空海が真言宗を広めた。"],
+["空海が広めた仏教は？",["天台宗","真言宗","浄土宗","臨済宗"],1,"空海＝真言宗。最澄＝天台宗でセットにする。"],
+["最澄が広めた仏教は？",["真言宗","浄土宗","天台宗","曹洞宗"],2,"最澄は比叡山延暦寺を拠点に天台宗を広めた。"]]},
+{title:"遣唐使の停止・唐と宋",qs:[
+["遣唐使の停止を提案した人物は？",["菅原道真","藤原道長","平清盛","源頼朝"],0,"菅原道真の提案を受け、894年に遣唐使派遣が停止された。"],
+["遣唐使の派遣が停止された年は？",["794年","866年","894年","935年"],2,"894年。『白紙（894）に戻そう遣唐使』で覚えることもある。"],
+["唐が滅亡した年は？",["907年","960年","1016年","1086年"],0,"唐は907年に滅亡。中国ではその後、五代十国の時代へ。"],
+["唐の滅亡後、中国で成立した王朝は？",["宋","元","明","清"],0,"宋は960年に成立した。"],
+["遣唐使停止後、日本で発達した文化を何という？",["天平文化","国風文化","桃山文化","化政文化"],1,"日本の風土や生活に合った国風文化が発達した。"]]},
+{title:"国風文化",qs:[
+["国風文化が最も栄えた時期に権力を握った一族は？",["平氏","源氏","藤原氏","北条氏"],2,"藤原氏が摂政・関白として政治の実権を握った。"],
+["『源氏物語』の作者は？",["清少納言","紫式部","和泉式部","小野小町"],1,"紫式部の作品。『枕草子』の清少納言と区別。"],
+["『枕草子』の作者は？",["紫式部","清少納言","紀貫之","藤原道長"],1,"清少納言が宮廷生活などを随筆に記した。"],
+["国風文化を代表する日本独自の文字は？",["甲骨文字","仮名文字","ハングル","楔形文字"],1,"ひらがな・カタカナが発達し、和歌や物語文学が栄えた。"],
+["藤原道長の栄華を象徴する和歌で知られる建物は？",["金閣","銀閣","平等院鳳凰堂","東大寺大仏殿"],2,"藤原頼通が宇治に平等院鳳凰堂を建立した。"]]},
+{title:"貴族の生活・浄土信仰",qs:[
+["平安時代の貴族の住居の代表的な様式は？",["寝殿造","書院造","合掌造","校倉造"],0,"寝殿造は広い敷地に寝殿や対屋を配置する様式。"],
+["暦や方角などを気にする考え方に関係するのは？",["陰陽道","朱子学","蘭学","国学"],0,"陰陽道では吉凶や方角などが重視された。"],
+["浄土信仰で、人々が往生を願った場所は？",["極楽浄土","竜宮城","高天原","黄泉の国"],0,"阿弥陀仏を信じ、死後に極楽浄土へ生まれ変わることを願った。"],
+["平等院鳳凰堂と関係が深い人物は？",["藤原頼通","源義経","北条時宗","足利義満"],0,"藤原頼通が1053年に平等院鳳凰堂を建立。"],
+["浄土信仰が広がった背景の一つは何？",["末法思想","鎖国政策","産業革命","廃仏毀釈"],0,"末法の世という不安の中で、極楽往生を願う信仰が広がった。"]]},
+{title:"武士の登場・院政",qs:[
+["上皇が天皇に代わって政治を行う仕組みは？",["摂関政治","院政","幕藩体制","鎖国"],1,"白河上皇が始めた院政は、上皇が政治の実権を握る仕組み。"],
+["院政を始めたことで知られる上皇は？",["後鳥羽上皇","白河上皇","後醍醐天皇","鳥羽上皇"],1,"白河上皇が1086年に院政を始めた。"],
+["武士が成長した背景として正しいものは？",["地方の治安維持や土地争い","海外との貿易禁止","選挙制度の成立","工場制機械工業"],0,"地方で土地や治安を守る武装した人々が武士として成長した。"],
+["平将門の乱が起きたのは何世紀？",["8世紀","9世紀","10世紀","12世紀"],2,"平将門の乱は939年。藤原純友の乱とともに覚える。"],
+["武士の棟梁として東国で勢力を伸ばした一族は？",["源氏","藤原氏","橘氏","豊臣氏"],0,"源氏・平氏などの武士団が力を強めた。"]]},
+{title:"平氏政権・源平の争乱",qs:[
+["平氏政権の中心人物は？",["源頼朝","平清盛","源義経","足利尊氏"],1,"平清盛は武士として初めて太政大臣となった。"],
+["平清盛が貿易を進めた中国の王朝は？",["唐","宋","元","明"],1,"平清盛は日宋貿易を進め、港の整備などを行った。"],
+["源頼朝が鎌倉幕府を開く基盤となったのはどこ？",["京都","鎌倉","奈良","平泉"],1,"源頼朝は鎌倉を拠点に武士による政権を築いた。"],
+["壇ノ浦の戦いで滅亡した勢力は？",["平氏","源氏","北条氏","足利氏"],0,"1185年、壇ノ浦の戦いで平氏が滅亡した。"],
+["源義経が活躍した戦いの一つは？",["一ノ谷の戦い","長篠の戦い","関ヶ原の戦い","桶狭間の戦い"],0,"源義経は一ノ谷や壇ノ浦などで活躍した。"]]},
+{title:"総合・記述チェック",qs:[
+["平安京へ遷都した天皇と年を答えよう。",null,null,"桓武天皇・794年。"],
+["菅原道真と894年の出来事を説明しよう。",null,null,"菅原道真の提案により、遣唐使の派遣が停止された。"],
+["紫式部と清少納言の作品をそれぞれ答えよう。",null,null,"紫式部＝源氏物語、清少納言＝枕草子。"],
+["院政とはどのような政治か説明しよう。",null,null,"上皇が天皇に代わって政治の実権を握る仕組み。"],
+["平清盛と源頼朝の違いを簡潔に答えよう。",null,null,"平清盛は平氏政権を築き、源頼朝は鎌倉を拠点に武士政権を築いた。"]]}
+];
+let current=0, answers={}, graded={}, onlyWrong=false, wrongSet=[];
+const $=id=>document.getElementById(id);
+function key(q){return current+"-"+q}
+function renderSets(){$("sets").innerHTML=data.map((d,i)=>'<button class="set '+(i===current?'active':'')+'" data-i="'+i+'"><span class="num">'+String(i+1).padStart(2,"0")+'</span><span>'+d.title+'</span></button>').join("");document.querySelectorAll(".set").forEach(b=>b.onclick=()=>{current=+b.dataset.i;onlyWrong=false;render()})}
+function render(){renderSets();const d=data[current];$("topicPill").textContent="SET "+String(current+1).padStart(2,"0");$("topicTitle").textContent=d.title;const list=d.qs.map((q,i)=>({q,i})).filter(x=>!onlyWrong||wrongSet.includes(key(x.i)));$("questions").innerHTML=list.map(({q,i})=>{const k=key(i),a=answers[k],g=graded[k];return '<section class="q" data-q="'+i+'"><div class="qtop"><span class="qnum">Q'+String(i+1).padStart(2,"0")+'</span><div style="flex:1"><h3>'+q[0]+'</h3>'+(q[1]?'<div class="options">'+q[1].map((o,j)=>'<button class="option '+(a===j?'chosen ':'')+(g?(j===q[2]?'correct':a===j?'wrong':''):'')+'" data-j="'+j+'" data-q="'+i+'"><span class="letter">'+String.fromCharCode(65+j)+'</span><span>'+o+'</span></button>').join("")+'</div>':'<input class="free" data-q="'+i+'" value="'+(a||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;')+'" placeholder="自分の言葉で答える（自己採点）">')+'<p class="feedback '+(g?'show '+(q[1]?(a===q[2]?'good':'bad'):''):'')+'">'+(g?(q[1]?(a===q[2]?'正解！':'正解：'+q[1][q[2]]+'。'):'模範解答：')+q[3]:'')+'</p></div></div></section>'}).join("")||'<p>復習する問題はないよ。答え合わせ後に「間違えた問題を復習」を使ってね。</p>';
+document.querySelectorAll(".option").forEach(b=>b.onclick=()=>{answers[key(+b.dataset.q)]=+b.dataset.j;delete graded[key(+b.dataset.q)];render()});document.querySelectorAll(".free").forEach(inp=>inp.oninput=()=>{answers[key(+inp.dataset.q)]=inp.value;delete graded[key(+inp.dataset.q)];updateStats()});
+$("bar").style.width=(Object.keys(graded).filter(k=>k.startsWith(current+"-")).length/d.qs.length*100)+"%";updateStats();$("result").classList.remove("show")}
+function updateStats(){let total=0,correct=0;data.forEach((d,di)=>d.qs.forEach((q,i)=>{const k=di+"-"+i;if(answers[k]!==undefined&&answers[k]!=="")total++;if(graded[k]&&q[1]&&answers[k]===q[2])correct++}));$("doneCount").textContent=total;$("scoreCount").textContent=Object.keys(graded).length?Math.round(correct/Math.max(1,Object.keys(graded).filter(k=>{const [di,qi]=k.split("-").map(Number);return data[di].qs[qi][1]}).length)*100)+"%":"—";$("progressText").textContent=Object.keys(graded).filter(k=>k.startsWith(current+"-")).length+" / "+data[current].qs.length+" 問採点済み"}
+$("grade").onclick=()=>{const d=data[current];wrongSet=[];d.qs.forEach((q,i)=>{const k=key(i);if(answers[k]===undefined||answers[k]==="")return;graded[k]=true;if(q[1]&&answers[k]!==q[2])wrongSet.push(k)});render();let scored=d.qs.filter(q=>q[1]),n=scored.filter((q,i)=>answers[key(d.qs.indexOf(q))]===q[2]).length;$("result").innerHTML='<strong>'+n+' / '+scored.length+'</strong><div>選択問題の結果。記述問題は模範解答と照らし合わせよう。</div>'; $("result").classList.add("show");updateStats()};
+$("show").onclick=()=>{data[current].qs.forEach((q,i)=>{graded[key(i)]=true;if(q[1]&&answers[key(i)]===undefined)answers[key(i)]=q[2]});render();$("result").innerHTML='<strong>答え・解説を表示中</strong><div>各問題の下に正解と解説を表示したよ。</div>';$("result").classList.add("show")};
+$("retry").onclick=()=>{if(!wrongSet.length){$("result").innerHTML='<strong>復習問題なし</strong><div>まず答え合わせをして、間違えた選択問題を見つけよう。</div>';$("result").classList.add("show");return}onlyWrong=true;render()};
+$("reset").onclick=()=>{data[current].qs.forEach((q,i)=>{delete answers[key(i)];delete graded[key(i)]});wrongSet=[];onlyWrong=false;render()};
+$("next").onclick=()=>{current=(current+1)%data.length;onlyWrong=false;render();window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})};
+$("theme").onclick=()=>{const light=document.body.classList.toggle("light");document.documentElement.style.colorScheme=light?"light":"dark";document.documentElement.style.setProperty("--bg",light?"#f2f5fb":"#090d18");document.documentElement.style.setProperty("--panel",light?"#ffffff":"#111a2b");document.documentElement.style.setProperty("--panel2",light?"#edf1fa":"#172238");document.documentElement.style.setProperty("--line",light?"#d5deed":"#293751");document.documentElement.style.setProperty("--text",light?"#18233a":"#edf3ff");document.documentElement.style.setProperty("--muted",light?"#5c6a82":"#9aabc5");document.documentElement.style.setProperty("--shadow",light?"0 14px 40px #24395c12":"0 14px 40px #0003");$("theme").textContent=light?"◐ Dark mode":"☼ Light mode"};
+render();
+</script>
+</body>
+</html>
